@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700162675583",
+    "project_id": "uasamubkonsultdokterti7a",
+    "storage_bucket": "uasamubkonsultdokterti7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700162675583:android:6d27381e4f436d8894c04a",
+        "android_client_info": {
+          "package_name": "com.example.konsultdokter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700162675583-gdsg566j2md1hslofmj4qb07bmkfs254.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCAo4aa0Wj0kiF32xjTbOJVeB2uScjdkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700162675583-gdsg566j2md1hslofmj4qb07bmkfs254.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
