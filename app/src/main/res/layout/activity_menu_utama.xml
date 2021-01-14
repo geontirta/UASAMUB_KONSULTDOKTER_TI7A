@@ -5,7 +5,7 @@
     android:id="@+id/linearutm"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#DEE68E"
     android:orientation="vertical"
     tools:context=".MenuUtama">
 
@@ -23,7 +23,7 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#F1F6BF"
         android:gravity="center"
         android:paddingTop="60dp"
         android:text="Selamat Datang"
@@ -35,7 +35,7 @@
         android:id="@+id/linearimg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#ECF1BE"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="10dp"
@@ -96,7 +96,7 @@
         android:id="@+id/linearklr"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:background="#E8EDB4"
         android:orientation="horizontal"
         android:paddingLeft="40dp"
         android:paddingRight="40dp">

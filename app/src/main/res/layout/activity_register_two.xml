@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3F8C1"
     android:orientation="vertical"
     tools:context=".RegisterTwoActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/sudutatas"
         android:layout_marginTop="-10dp"
+        android:background="@drawable/sudutatas"
         android:orientation="vertical">
 
         <TextView
@@ -19,13 +20,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
             android:text="LOGIN PAGE"
             android:textAlignment="center"
             android:textColor="@color/tputih"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:fontFamily="sans-serif-condensed-medium"
-            android:gravity="center_horizontal" />
+            app:fontFamily="sans-serif-condensed-medium" />
 
 
     </LinearLayout>
@@ -36,7 +37,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
-        android:background="@drawable/admin"  />
+        android:background="@drawable/admin" />
 
     <Button
         android:id="@+id/addphoto"
@@ -119,7 +120,6 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/sudutbawah"
         android:gravity="center"
-        android:text="@Copyright_GEO TIRTA"
         android:textColor="#FDFDFD"
         android:textSize="18sp"
         android:textStyle="bold" />
