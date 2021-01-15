@@ -1,4 +1,4 @@
-package com.example.uts_amub_ti7a_1711500015_geotirta;
+package com.example.konsultdokter;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -94,13 +94,13 @@ public class RegisterTwoActivity extends AppCompatActivity {
                                         public void onSuccess(Uri uri) {
                                             String uri_photo = uri.toString();
                                             reference.getRef().child("url_photo_profile").setValue(uri_photo);
-                                            reference.getRef().child("hobi").setValue(hobi.getText().toString());
+                                            reference.getRef().child("nohp").setValue(hobi.getText().toString());
                                             reference.getRef().child("alamat").setValue(alamat.getText().toString());
                                         }
                                     }).addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
-                                            Intent gotosucces = new Intent(com.example.uts_amub_ti7a_1711500015_geotirta.RegisterTwoActivity.this, com.example.uts_amub_ti7a_1711500015_geotirta.MainActivity.class);
+                                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, com.example.konsultdokter.MainActivity.class);
                                             startActivity(gotosucces);
                                         }
                                     });
@@ -110,7 +110,7 @@ public class RegisterTwoActivity extends AppCompatActivity {
                             }).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                            Intent gotosucces = new Intent(com.example.uts_amub_ti7a_1711500015_geotirta.RegisterTwoActivity.this, com.example.uts_amub_ti7a_1711500015_geotirta.MainActivity.class);
+                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, com.example.konsultdokter.MainActivity.class);
                             startActivity(gotosucces);
                         }
                     });

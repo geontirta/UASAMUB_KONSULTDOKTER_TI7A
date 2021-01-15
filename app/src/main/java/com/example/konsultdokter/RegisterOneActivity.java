@@ -1,4 +1,4 @@
-package com.example.uts_amub_ti7a_1711500015_geotirta;
+package com.example.konsultdokter;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -58,7 +58,7 @@ public class RegisterOneActivity extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError databaseError) {
                     }
                 });
-                Intent gotonexregister = new Intent(com.example.uts_amub_ti7a_1711500015_geotirta.RegisterOneActivity.this, com.example.uts_amub_ti7a_1711500015_geotirta.RegisterTwoActivity.class);
+                Intent gotonexregister = new Intent(com.example.konsultdokter.RegisterOneActivity.this, com.example.konsultdokter.RegisterTwoActivity.class);
                 startActivity(gotonexregister);
             }
 

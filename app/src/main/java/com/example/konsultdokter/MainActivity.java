@@ -1,4 +1,4 @@
-package com.example.uts_amub_ti7a_1711500015_geotirta;
+package com.example.konsultdokter;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent register = new Intent(com.example.uts_amub_ti7a_1711500015_geotirta.MainActivity.this, RegisterOneActivity.class);
+                Intent register = new Intent(com.example.konsultdokter.MainActivity.this, RegisterOneActivity.class);
                 startActivity(register);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent masuk = new Intent(com.example.uts_amub_ti7a_1711500015_geotirta.MainActivity.this, RegisterOneActivity.class);
+                Intent masuk = new Intent(com.example.konsultdokter.MainActivity.this, MenuUtama.class);
                 startActivity(masuk);
             }
         });
