@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginTer extends AppCompatActivity {
 
     Button register, login;
 
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent register = new Intent(com.example.konsultdokter.MainActivity.this, RegisterOneActivity.class);
+                Intent register = new Intent(LoginTer.this, MenuUtama.class);
                 startActivity(register);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent masuk = new Intent(com.example.konsultdokter.MainActivity.this, MenuUtama.class);
+                Intent masuk = new Intent(LoginTer.this, RegisterOneActivity.class);
                 startActivity(masuk);
             }
         });

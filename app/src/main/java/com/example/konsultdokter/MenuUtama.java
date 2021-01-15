@@ -38,7 +38,7 @@ public class MenuUtama extends AppCompatActivity {
         btnkeluar1.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i = new Intent(getApplicationContext(), LoginTer.class);
                 startActivity(i);
             }
         });

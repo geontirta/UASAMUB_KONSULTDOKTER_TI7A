@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -100,7 +101,7 @@ public class RegisterTwoActivity extends AppCompatActivity {
                                     }).addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
-                                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, com.example.konsultdokter.MainActivity.class);
+                                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, MenuUtama.class);
                                             startActivity(gotosucces);
                                         }
                                     });
@@ -110,7 +111,7 @@ public class RegisterTwoActivity extends AppCompatActivity {
                             }).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, com.example.konsultdokter.MainActivity.class);
+                            Intent gotosucces = new Intent(com.example.konsultdokter.RegisterTwoActivity.this, MenuUtama.class);
                             startActivity(gotosucces);
                         }
                     });

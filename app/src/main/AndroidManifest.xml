@@ -17,7 +17,7 @@
         <activity android:name=".MenuUtama" />
         <activity android:name=".RegisterTwoActivity" />
         <activity android:name=".RegisterOneActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginTer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
