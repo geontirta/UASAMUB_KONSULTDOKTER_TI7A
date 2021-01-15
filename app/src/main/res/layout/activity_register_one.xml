@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterTwoActivity">
+    tools:context=".RegisterOneActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:srcCompat="@drawable/kotakatas" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:text="LOGIN PAGE"
+            android:text="REGISTER PAGE"
             android:textAlignment="center"
             android:textColor="@color/tputih"
             android:textSize="30sp"
@@ -31,37 +38,21 @@
     </LinearLayout>
 
 
-    <ImageView
-        android:id="@+id/picphotoregister"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:background="@drawable/admin"  />
-
-    <Button
-        android:id="@+id/addphoto"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="-20dp"
-
-        android:background="@drawable/tambah" />
-
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:text="Hobbi"
+        android:text="Username"
         android:textColor="@color/biruhijau"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/daftarhobi"
+        android:id="@+id/daftaruaser"
         android:layout_width="match_parent"
         android:layout_height="50dp"
 
@@ -81,12 +72,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:text="Alamat"
+        android:text="Paswword"
         android:textColor="@color/biruhijau"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/daftaralamat"
+        android:id="@+id/daftarpassword"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -97,8 +88,31 @@
         android:text=""
         android:textSize="18sp" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="email"
+        android:textColor="@color/biruhijau"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/daftaremail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/colortext"
+        android:textSize="18sp" />
+
     <Button
-        android:id="@+id/bdaftar"
+        android:id="@+id/bnext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -107,12 +121,12 @@
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/bbiruhijau"
-        android:text="register"
-        android:textColor="#FDFBFB"
+        android:text="Next"
+        android:textColor="#FBF8F8"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
@@ -123,6 +137,5 @@
         android:textColor="#FDFDFD"
         android:textSize="18sp"
         android:textStyle="bold" />
-
 
 </LinearLayout>
