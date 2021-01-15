@@ -1,9 +1,263 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearutm"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KonsultasiDokter">
+    android:background="#EFE9B3"
+    android:orientation="vertical"
+    tools:context=".TambahdataActivity">
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="PASIEN DAN GEJALA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/ednama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Masukkan Nama Pasien"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Jenis Kelamin" />
+
+            <RadioGroup
+                android:id="@+id/rgjenkel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdlaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Laki-lLaki" />
+
+                <RadioButton
+                    android:id="@+id/rdpw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Perempuan" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:text="Golongan darah" />
+
+            <RadioGroup
+                android:id="@+id/rggoldar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/rdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/rdab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="AB" />
+
+                <RadioButton
+                    android:id="@+id/rdo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="O" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Kecamatan" />
+
+            <Spinner
+                android:id="@+id/spkec"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/daftar_kecamatan"
+                android:spinnerMode="dropdown" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Kelurahan" />
+
+            <Spinner
+                android:id="@+id/spkel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Gejala Pasien" />
+
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="125dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/ckbatuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batuk Kering" />
+
+        <CheckBox
+            android:id="@+id/cksesak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sesak Napas" />
+
+        <CheckBox
+            android:id="@+id/ckdemam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Demam (>38°C)" />
+
+        <CheckBox
+            android:id="@+id/ckdiare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diare" />
+
+        <CheckBox
+            android:id="@+id/cksakit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sakit Kepala" />
+
+        <CheckBox
+            android:id="@+id/ckkonj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konjungtivitis" />
+
+        <CheckBox
+            android:id="@+id/ckhilang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hilangnya Kemampuan Mengecap" />
+
+        <CheckBox
+            android:id="@+id/ckruam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruam di Kulit" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajukan keluhan yang tidak terdapat pada gejala diatas :" />
+
+    <EditText
+        android:id="@+id/edchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#1D9822"
+        android:text="KEMBALI"
+        android:textColor="#FFFBFB"
+        android:typeface="monospace" />
+
+</LinearLayout>
